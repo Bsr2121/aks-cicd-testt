@@ -1,0 +1,15 @@
+apiVersion: gitops.k8smgmt.io/v3
+kind: InfraProvisioner
+metadata:
+  name: tes
+  project: fayas
+spec:
+  config:
+    secretGroups:
+    - test
+    version: 0.14.9
+  folder:
+    name: allsecterkeys
+  repository: fayas-syncrepo
+  revision: main
+  type: Terraform
